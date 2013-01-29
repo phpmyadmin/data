@@ -16,3 +16,7 @@ Usage
 To compile a tex file and generate a pdf :
 
 pdflatex presentation.tex
+
+To create handouts, add "handout" to the class options
+
+\documentclass[14pti,handout]{beamer}
