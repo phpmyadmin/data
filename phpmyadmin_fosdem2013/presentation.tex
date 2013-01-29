@@ -1,5 +1,6 @@
 \documentclass[14pt]{beamer}
 \usepackage{hyperref}
+\usepackage[T1]{fontenc}
 \usetheme{Madrid}
 \usecolortheme[RGB={00,33,66}]{structure}
 \definecolor{PmaOrange}{RGB}{255,173,17}
@@ -71,6 +72,22 @@
       \item code cleanup and refactoring
       \item plugin system for import/export/auth/\ldots
       \item removal of frames
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}Removal of frames}}
+    \pause
+    \begin{itemize}[<+->]
+      \item get rid of html <frames> and replaced by <div>
+      \item server side : response class generating pages
+      \item client side : javascript module 
+      \begin{itemize}[<+->]
+        \item retrieve pages from server using AJAX
+        \item reload pages
+	\item cache pages
+	\item handle navigation and browse history
+      \end{itemize}
     \end{itemize}
   \end{frame}
   \begin{frame}
