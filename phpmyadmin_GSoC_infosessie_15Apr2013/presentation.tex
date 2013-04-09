@@ -1,0 +1,114 @@
+\documentclass[14pt]{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\definecolor{PmaPurple}{RGB}{00,33,66}
+\definecolor{PmaOrange}{RGB}{255,173,17}
+\definecolor{PmaOlive}{HTML}{727E0A}
+\usecolortheme[named=PmaPurple]{structure}
+\setbeamercolor{title}{fg=PmaOrange}
+\setbeamercolor{frametitle}{fg=PmaOrange}
+\hypersetup{colorlinks,linkcolor=,urlcolor=PmaOrange}
+\logo{
+  \includegraphics[scale=.6]{pictures/pma_logo.png}
+}
+\title{GSoC 2013 info session - phpMyAdmin}
+\author{Dieter Adriaenssens}
+\institute[phpMyAdmin]{phpMyAdmin developer}
+\date[15Apr2013]{Google Summer of Code info session UGent\\
+Mentoring organisation : phpMyAdmin\\
+April 15th, 2013}
+\subject{phpMyAdmin}
+\begin{document}
+  \begin{frame}
+  \titlepage
+  \end{frame}
+  \begin{frame}
+    \frametitle{What is phpMyAdmin?}
+    %(question to audience : who knows/uses pma?)
+      A webinterface written in PHP (and JavaScript),\\
+      to administer a MySQL database and users.
+  \end{frame}
+  \begin{frame}
+    \frametitle{Current version}
+    % (questions to audience about used version)
+    \begin{itemize}[<+->]
+      \item stable version : 3.5.8
+      \item in development : 4.0
+      \item available in \href{http://www.phpmyadmin.net/home_page/translations.php}{69 languages}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 3.5}
+   \textbf{{\color{PmaOlive}Features}}
+    \pause
+    \begin{itemize}[<+->]
+      \item improved support for stored routines, events and triggers
+      \item openGIS support
+      \item Drizzle support
+      \item improved ENUM/SET editor
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 3.5}
+    \textbf{{\color{PmaOlive}Demo}}
+    \begin{itemize}
+      \item advisor : suggestions to tweak config setting in order to optimise MySQL server performance
+      \item zoom search
+      \item grid editing
+      \item browse-mode improvements
+      \begin{itemize}
+        \item flexible column width
+        \item reorder columns
+        \item AJAXification of some operations
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}What to expect in 4.0}}
+    \pause
+    \begin{itemize}[<+->]
+      \item code cleanup and refactoring
+      \item plugin system for import/export/auth/\ldots
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}Removal of frames}}
+    \pause
+    \begin{itemize}[<+->]
+      \item get rid of html <frames> and replaced by <div>
+      \item server side : response class generating pages
+      \item client side : JavaScript module 
+      \begin{itemize}[<+->]
+	\item handles navigation
+        \item retrieves pages from server using AJAX
+        \item reloads pages in browser window
+	\item caches pages
+	\item browse history
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}Preview of 4.0}}
+     \begin{itemize}
+      \item new navigation tree
+      \item improved server status monitor
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+  \frametitle{Questions}
+    Thanks for your attention!\\
+    Questions?
+  \end{frame}
+  \begin{frame}
+    \frametitle{How to contact us}
+    \begin{itemize}
+      \item website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item users mailing list (for support questions): \href{mailto:phpmyadmin-users@lists.sourceforge.net}{phpmyadmin-users@lists.sourceforge.net}
+      \item developers mailing list (development discussion): \href{mailto:phpmyadmin-devel@lists.sourceforge.net}{phpmyadmin-devel@lists.sourceforge.net}
+    \end{itemize}
+  \end{frame}
+\end{document}
