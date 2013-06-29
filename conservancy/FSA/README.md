@@ -25,4 +25,10 @@ Have a look at the [Latex manual](https://en.wikibooks.org/wiki/LaTeX) on how to
 
 * To compile a tex file and generate a pdf :
 
+latex conservancy-phpmyadmin-fsa.tex && dvipdf conservancy-phpmyadmin-fsa.dvi
+
+or
+
 pdflatex conservancy-phpmyadmin-fsa.tex
+
+(but draftcopy is not compatible with pdflatex, so the DRAFT watermark will not be visible)
