@@ -1,5 +1,4 @@
-\documentclass[letterpaper,12pt]{article}
-\usepackage{draftcopy}
+\documentclass[letterpaper,11pt]{article}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{fancyhdr}
@@ -8,6 +7,7 @@
               paperwidth=8.5in, paperheight=11in,
               left=1in, right=1in, top=1.25in, bottom=.75in,
            ]{geometry}
+\usepackage[utf8]{inputenc}
 
 \pagestyle{fancy}
 
@@ -23,16 +23,26 @@
 \newcommand{\projectname}{phpMyAdmin Project\xspace}
 \newcommand{\signatories}{phpMyAdmin Developers\xspace}
 \newcommand{\leadershipbody}{phpMyAdmin Development Team\xspace}
-\newcommand{\signature}[3][\projectname]{
+\newcommand{\signature}[3]{
 \vspace{2ex}
 
 By: \hspace{0.95em}\rule{0.50\textwidth}{0.2mm} \hfill{}Date: \rule{0.25\textwidth}{0.2mm}
 
+\if\relax\detokenize{#1}\relax
+\else
 \hspace{2.5em} \textsc{#1}
+\fi
+\if\relax\detokenize{#2}\relax
+\else
 
 \hspace{2.5em} #2
+\fi
+\if\relax\detokenize{#3}\relax
+\else
 
-\hspace{2.5em} #3 \\[6ex]
+\hspace{2.5em} #3
+\fi
+\vspace{6ex}
 }
 
 \begin{document}
