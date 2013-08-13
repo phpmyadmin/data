@@ -1,0 +1,156 @@
+\documentclass[14pt]{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\definecolor{PmaPurple}{RGB}{00,33,66}
+\definecolor{PmaOrange}{RGB}{255,173,17}
+\definecolor{PmaOlive}{HTML}{727E0A}
+\usecolortheme[named=PmaPurple]{structure}
+\setbeamercolor{title}{fg=PmaOrange}
+\setbeamercolor{frametitle}{fg=PmaOrange}
+\hypersetup{colorlinks,linkcolor=,urlcolor=PmaOrange}
+\logo{
+  \includegraphics[scale=.6]{pictures/pma_logo.png}
+}
+\title{GSoC 2013 info session - phpMyAdmin}
+\author{Dieter Adriaenssens}
+\institute[phpMyAdmin]{phpMyAdmin developer}
+\date[15Apr2013]{Google Summer of Code info session UGent\\
+Mentoring organisation : phpMyAdmin\\
+April 15th, 2013}
+\subject{phpMyAdmin}
+\begin{document}
+  \begin{frame}
+  \titlepage
+  \end{frame}
+  \begin{frame}
+    \frametitle{What is phpMyAdmin?}
+    %(question to audience : who knows/uses pma?)
+      A webinterface written in PHP (and JavaScript),\\
+      to administer a MySQL database and users.
+  \end{frame}
+  \begin{frame}
+    \frametitle{Current version}
+    % (questions to audience about used version)
+    \begin{itemize}
+      \item stable version : 3.5.8
+      \item in development : 4.0 (currently 4.0.0-rc1)
+      \item available in \href{http://www.phpmyadmin.net/home\_page/translations.php}{69 languages}
+      \item avg. 2-300K downloads (every release)
+      \item almost 3M downloads in total last year
+      \item 18K commits by 242 contributors last year
+      \item 10-20 active contributors per month
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Why phpMyAdmin participates in GSoC}
+    \begin{itemize}
+      \item to get new features implemented in future versions
+      \item attract new developers
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{GSoC history}
+    \begin{itemize}
+      \item 2012 : 6 students, 5 passed -> phpMyAdmin 4.0
+      \item 2011 : 8 students, 7 passed -> phpMyAdmin 3.5
+      \item 2010 : 6 students, 6 passed -> phpMyAdmin 3.4
+      \item 2009 : under MySQL umbrella : 5 students
+      \item 2008 : under MySQL umbrella : 2 students
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What made it into 3.5}
+    \begin{itemize}
+      \item improved support for stored routines, events and triggers
+      \item openGIS support
+      \item Drizzle support
+      \item improved ENUM/SET editor
+      \item advisor : suggestions to tweak config setting in order to optimise MySQL server performance
+      \item zoom search
+      \item grid editing
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What made it into 4.0}
+    \begin{itemize}
+      \item code cleanup and refactoring
+      \item plugin system for import/export/auth/\ldots
+      \item removal of frames
+      \item new navigation tree
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Ideas list for GSoC 2013}
+    Full list : \href{http://wiki.phpma.org/pma/GSoC\_2013\_Ideas\_List}{wiki.phpma.org/pma/GSoC\_2013\_Ideas\_List}
+    \begin{itemize}
+      \item automated testing
+      \item refactoring
+      \item synchronize data
+      \item AJAX error reporting
+      \item interface improvements
+      \item your idea\ldots
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What to expect}
+    \begin{itemize}
+      \item mentoring by experienced mentors/developers
+      \item be active on the mailinglist
+      \item submit a patch fixing a bug or adding a small feature
+      \item 12 weeks of 40 hours coding
+    \end{itemize}
+ \end{frame}
+  \begin{frame}
+    \frametitle{Submitting a good proposal}
+    \begin{itemize}
+      \item write a good project proposal :
+      \begin{itemize}
+        \item detailed functional description
+        \item well defined deliverables
+        \item clear schedule
+      \end{itemize}
+      \item submit well in advance : time for feedback
+      \item application deadline : May 3
+      \item patch deadline (phpMyAdmin) : May 10
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{During GSoC}
+    \textbf{May 27} - When you get selected :
+    \begin{itemize}
+      \item community bonding period : get up to speed, read, ask questions, set up your wiki, clone the git repo, Google administration
+      \pause
+      \item \textbf{June 17} - start coding, first payment
+      \item mandatory weekly reports on your blog, commit code regularly, merged into master by mentor
+      \pause
+      \item \textbf{August 2} - mid-term evaluation, based on your schedule + payment
+      \pause
+      \item finish coding, documentation, testing
+      \pause
+      \item \textbf{September 16} - pencils down, final evaluation, submit code, final payment
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What happens after GSoC}
+    \begin{itemize}
+      \item your code gets merged with master branch
+      \item we offer active membership :
+      \begin{itemize}
+        \item commit access
+        \item team membership
+        \item invitation to team meetings
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+   \frametitle{Questions}
+    Thanks for your attention!\\
+    Questions?
+    \begin{itemize}
+      \item website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item GSoC info : \href{http://wiki.phpma.org/pma/GSoC\_2013\_Applicant\_Guide}{wiki.phpma.org/pma/GSoC\_2013\_Applicant\_Guide}
+      \item developers mailing list (development discussion): \href{mailto:phpmyadmin-devel@lists.sourceforge.net}{phpmyadmin-devel@lists.sourceforge.net}
+    \end{itemize}
+  \end{frame}
+\end{document}

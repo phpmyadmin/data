@@ -1,0 +1,177 @@
+\documentclass[14pt]{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\definecolor{PmaPurple}{RGB}{00,33,66}
+\definecolor{PmaOrange}{RGB}{255,173,17}
+\definecolor{PmaOlive}{HTML}{727E0A}
+\usecolortheme[named=PmaPurple]{structure}
+\setbeamercolor{title}{fg=PmaOrange}
+\setbeamercolor{frametitle}{fg=PmaOrange}
+\hypersetup{colorlinks,linkcolor=,urlcolor=PmaOrange}
+\logo{
+  \includegraphics[scale=.6]{pictures/pma_logo.png}
+}
+\title{The present and future of phpMyAdmin}
+\author{Dieter Adriaenssens}
+\institute[phpMyAdmin]{phpMyAdmin developer - ruleant@users.sf.net}
+\date[FOSDEM - 3Feb2013]{FOSDEM - February 3rd, 2013}
+\subject{phpMyAdmin}
+\begin{document}
+  \begin{frame}
+  \titlepage
+  \end{frame}
+  \begin{frame}
+    \frametitle{What is phpMyAdmin?}
+    %(question to audience : who knows/uses pma?)
+      A webinterface written in PHP (and JavaScript),\\
+      to administer a MySQL database and users.
+  \end{frame}
+  \begin{frame}
+    \frametitle{Current version}
+    % (questions to audience about used version)
+    \begin{itemize}[<+->]
+      \item stable version : 3.5.6
+      \item in development : 4.0 (currently 4.0.0-alpha2)
+      \item available in \href{http://www.phpmyadmin.net/home\_page/translations.php}{69 languages}
+      \item avg. 2-300K downloads (every release)
+      \item almost 3M downloads in total last year
+      \item 18K commits by 242 contributors last year
+      \item 10-20 active contributors per month
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 3.5}
+   \textbf{{\color{PmaOlive}Features}}
+    \pause
+    \begin{itemize}[<+->]
+      \item improved support for stored routines, events and triggers
+      \item openGIS support
+      \item Drizzle support
+      \item improved ENUM/SET editor
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 3.5}
+    \textbf{{\color{PmaOlive}Demo}}
+    \begin{itemize}
+      \item zoom search
+      \item advisor : suggestions to tweak config setting in order to optimise MySQL server performance
+      \item grid editing
+      \item browse-mode improvements
+      \begin{itemize}
+        \item flexible column width
+        \item reorder columns
+        \item AJAXification of some operations
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Preparing next release}
+    \pause
+    It all started at the phpMyAdmin team meeting at FOSDEM 2012
+    \pause
+    \begin{itemize}[<+->]
+      \item next version : new features?
+      \item codebase with more than 10 years of history
+      \begin{itemize}[<+->]
+        \item duplicate code
+        \item limited modularity/reusability
+        \item inconsistent coding style
+	\item \ldots
+	\item => complicated to add new features
+      \end{itemize}
+      \item prepare for the future : clean up
+      \item 3.6 or 4.0?
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}What to expect in 4.0}}
+    \pause
+    \begin{itemize}[<+->]
+      \item code cleanup and refactoring
+      \item plugin system for import/export/auth/\ldots
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}Removal of frames}}
+    \pause
+    \begin{itemize}[<+->]
+      \item get rid of html <frames> and replaced by <div>
+      \item server side : response class generating pages
+      \item client side : JavaScript module
+      \begin{itemize}[<+->]
+	\item handles navigation
+        \item retrieves pages from server using AJAX
+        \item reloads pages in browser window
+	\item caches pages
+	\item browse history
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}Preview of 4.0}}
+     \begin{itemize}
+      \item new navigation tree
+      \item improved server status monitor
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What's new in 4.0}
+    \textbf{{\color{PmaOlive}What to expect in 4.0}}
+    \begin{itemize}
+      \item code cleanup and refactoring
+      \item plugin system for import/export/auth/\ldots
+      \item removal of frames
+      \item new navigation tree
+      \pause
+      \item JavaScript and AJAX are required
+      \pause
+      \item documentation has a new look : \href{https://docs.phpmyadmin.net/}{docs.phpmyadmin.net}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Where to get it}
+    %(questions to audience about where they got it from)
+    \begin{itemize}[<+->]
+      \item current stable : phpMyAdmin website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item as a package from your distro
+      \item included in XAMPP, WAMP, cPanel, \ldots
+      \item development : git repository :  \href{http://git.phpma.org/}{git.phpma.org}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+  \frametitle{Help us improve phpMyAdmin}
+    \textbf{{\color{PmaOlive}How you can help}}
+    \pause
+    \begin{itemize}[<+->]
+      \item in preparation of the 4.0 release
+        \begin{itemize}[<+->]
+		\item testers : get \href{http://www.phpmyadmin.net/}{4.0.0-alpha2} or try it at \href{http://demo.phpma.org/}{demo.phpma.org} and report bugs
+	  \item translators : \href{http://translate.phpma.org/}{translate.phpma.org}
+	\end{itemize}
+      \item new developers
+	\begin{itemize}[<+->]
+          \item clone phpmyadmin on github
+          \item fix bugs
+          \item add new features
+	\end{itemize}
+      \item create a new theme
+      \item improve documentation
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+  \frametitle{Questions}
+    Thanks for your attention!\\
+    Questions?
+    \begin{itemize}
+      \item website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item users mailing list (for support questions): \href{mailto:phpmyadmin-users@lists.sourceforge.net}{phpmyadmin-users@lists.sourceforge.net}
+      \item developers mailing list (development discussion): \href{mailto:phpmyadmin-devel@lists.sourceforge.net}{phpmyadmin-devel@lists.sourceforge.net}
+      \item presentation : \href{http://ruleant.users.sf.net/pmafosdem13.pdf}{ruleant.users.sf.net/pmafosdem13.pdf}
+    \end{itemize}
+  \end{frame}
+\end{document}

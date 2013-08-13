@@ -1,0 +1,77 @@
+\documentclass[14pt]{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\definecolor{PmaPurple}{RGB}{00,33,66}
+\definecolor{PmaOrange}{RGB}{255,173,17}
+\definecolor{PmaOlive}{HTML}{727E0A}
+\usecolortheme[named=PmaPurple]{structure}
+\setbeamercolor{title}{fg=PmaOrange}
+\setbeamercolor{frametitle}{fg=PmaOrange}
+\hypersetup{colorlinks,linkcolor=,urlcolor=PmaOrange}
+\logo{
+  \includegraphics[scale=.6]{pictures/pma_logo.png}
+}
+\title{phpMyAdmin Tutorial}
+\author[]{Dieter Adriaenssens, Isaac Bennetch, Marc Delisle, Rouslan Placella}
+\institute[phpMyAdmin team]{phpMyAdmin team members}
+\date[DebConf13 - 13Aug2013]{DebConf13 - August 13th, 2013}
+\subject{phpMyAdmin}
+\begin{document}
+  \begin{frame}
+  \titlepage
+  \end{frame}
+  \begin{frame}
+    \frametitle{Overview}
+    \begin{itemize}
+      \item introduction : What is phpMyAdmin?
+      \item tutorial
+      \begin{itemize}
+        \item basic usage
+        \item advanced features
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{What is phpMyAdmin?}
+    %(question to audience : who knows/uses pma?)
+      A webinterface written in PHP (and JavaScript),\\
+      to administer a MySQL database and users.
+  \end{frame}
+  \begin{frame}
+    \frametitle{Current version}
+    % (questions to audience about used version)
+    \begin{itemize}
+      \item stable version : 4.0.5
+      \item in development : 4.1
+      \item being translated in \href{http://www.phpmyadmin.net/home\_page/translations.php}{69 languages} with \href{http://www.weblate.org/}{Weblate}
+      \item avg. 2-300K downloads (every release)
+      \item almost 3M downloads in total last year
+      \item 18K commits by 242 contributors last year
+      \item 10-20 active contributors per month
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Where to get it}
+    %(questions to audience about where they got it from)
+    \begin{itemize}
+      \item current stable : phpMyAdmin website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item as a package from your distro
+      \item included in XAMPP, WAMP, cPanel, \ldots
+      \item development : git repository :  \href{http://git.phpma.org/}{git.phpma.org}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Tutorial}
+  \end{frame}
+  \begin{frame}
+    \frametitle{Questions}
+    Thanks for your attention!\\
+    Questions?
+    \begin{itemize}
+      \item website : \href{http://www.phpmyadmin.net/}{www.phpmyadmin.net}
+      \item users mailing list (for support questions): \href{mailto:phpmyadmin-users@lists.sourceforge.net}{phpmyadmin-users@lists.sourceforge.net}
+      \item developers mailing list (development discussion): \href{mailto:phpmyadmin-devel@lists.sourceforge.net}{phpmyadmin-devel@lists.sourceforge.net}
+    \end{itemize}
+  \end{frame}
+\end{document}
