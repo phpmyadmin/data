@@ -1,5 +1,4 @@
-\documentclass[letterpaper,12pt]{article}
-\usepackage{draftcopy}
+\documentclass[letterpaper,11pt]{article}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{fancyhdr}
@@ -8,6 +7,7 @@
               paperwidth=8.5in, paperheight=11in,
               left=1in, right=1in, top=1.25in, bottom=.75in,
            ]{geometry}
+\usepackage[utf8]{inputenc}
 
 \pagestyle{fancy}
 
@@ -23,16 +23,26 @@
 \newcommand{\projectname}{phpMyAdmin Project\xspace}
 \newcommand{\signatories}{phpMyAdmin Developers\xspace}
 \newcommand{\leadershipbody}{phpMyAdmin Development Team\xspace}
-\newcommand{\signature}[3][\projectname]{
+\newcommand{\signature}[3]{
 \vspace{2ex}
 
 By: \hspace{0.95em}\rule{0.50\textwidth}{0.2mm} \hfill{}Date: \rule{0.25\textwidth}{0.2mm}
 
+\if\relax\detokenize{#1}\relax
+\else
 \hspace{2.5em} \textsc{#1}
+\fi
+\if\relax\detokenize{#2}\relax
+\else
 
 \hspace{2.5em} #2
+\fi
+\if\relax\detokenize{#3}\relax
+\else
 
-\hspace{2.5em} #3 \\[6ex]
+\hspace{2.5em} #3
+\fi
+\vspace{6ex}
 }
 
 \begin{document}
@@ -45,11 +55,20 @@ By: \hspace{0.95em}\rule{0.50\textwidth}{0.2mm} \hfill{}Date: \rule{0.25\textwid
 
 
 This Agreement is made by and between The Software Freedom Conservancy
-(``Conservancy'') and FIXME-CONTRIBUTOR-NAMES (the ``\signatories'')
+(``Conservancy'') and 
+Isaac Bennetch,
+Rouslan Placella,
+Dieter Adriaenssens,
+Madhura Jayaratne,
+Marc Delisle,
+Chanaka Dharmarathna,
+Michal Čihař, and
+Atul Pratap Singh
+(the ``\signatories'')
 on behalf of the project known as \projectname (the ``Project'') (each, a 
 ``Party''; together, ``the Parties'').  Conservancy is a New York nonprofit 
 public benefit corporation located in Brooklyn, New York, which has received 
-ecognition of exemption from federal income tax under Section 501(c)(3) of 
+recognition of exemption from federal income tax under Section 501(c)(3) of 
 the Internal Revenue Code (IRC) and classification as a public charity under 
 IRC Sections 509(a)(1) and 170(b)(1)(A)(vi).
 
@@ -73,7 +92,12 @@ the Project under the sponsorship of Conservancy.
 of a fund to receive donations of cash and other property earmarked
 for support of the Project and to make disbursements in furtherance
 of the Project's mission (the ``Project Fund''). Currently, the
-principal office of the Project is located at: [FIXME: MAILING ADDRESS]. 
+principal office of the Project is located at:
+\begin{quote}
+\projectname \\
+c/o Michal Čihař \\
+[ Michal's postal address redacted for privacy ]
+\end{quote}
 \end{enumerate}
 \medskip{}
 
@@ -177,8 +201,8 @@ On the Effective Date, the \signatories hereby transfer all
 rights, obligations and privileges of this Agreement over to the
 \leadershipbody.
 
-\item \textbf{Simple Self-Perpetuating Committee}. The \signatories,
-each a signatory hereto, shall initially [FIXME: form or comprise]
+The \signatories,
+each a signatory hereto, along with J.M. Rütter, shall form
 the \leadershipbody as a Project Committee (``Committee'')
 to represent the Project in its official communication with Conservancy.
 Existing Project Committee Members (``Members'') can be removed
@@ -198,6 +222,8 @@ minimum number of Members is fewer than three for a period of at least
 sixty days, Conservancy may unilaterally appoint new Members from
 the Project community to replace any unreachable Members and/or to
 increase the Committee composition to three Members.
+
+As of the Effective Date, the Representative shall be Michal Čihař.
 
 \item \textbf{Outstanding Liabilities}. The \signatories represent
 that any liabilities that may be outstanding in connection with the
@@ -269,11 +295,18 @@ shall be as effective and enforceable as the original.
 
 
 \textsc{In witness whereof}, the Parties have executed this Fiscal
-Sponsorship Agreement effective on the FIXME day of FIXME, FIXME (the
+Sponsorship Agreement effective on the 13\textsuperscript{th} day of August, 2013 (the
 ``Effective Date'').
 
-\signature[The Software Freedom Conservancy, Inc.]{Bradley M. Kuhn}{Title: Executive Director}
-\signature{[FIXME-CONTRIBUTOR]}{Role: Developer}
-\signature{[FIXME-CONTRIBUTOR]}{Role: Team member}
+\signature{The Software Freedom Conservancy, Inc.}{Bradley M. Kuhn}{Title: Executive Director}
+
+\signature{}{Isaac Bennetch}{}
+\signature{}{Rouslan Placella}{}
+\signature{}{Dieter Adriaenssens}{}
+\signature{}{Madhura Jayaratne}{}
+\signature{}{Marc Delisle}{}
+\signature{}{Chanaka Dharmarathna}{}
+\signature{}{Michal Čihař}{}
+\signature{}{Atul Pratap Singh}{}
 
 \end{document}
