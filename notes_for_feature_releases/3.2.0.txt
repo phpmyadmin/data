@@ -1,0 +1,7 @@
+Welcome to phpMyAdmin 3.2.0. This version contains a number of small new 
+features and some bug fixes.
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+http://sourceforge.net/projects/phpmyadmin to download.
+
+Marc Delisle, for the team

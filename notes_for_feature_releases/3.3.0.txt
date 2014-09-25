@@ -1,0 +1,11 @@
+Welcome to phpMyAdmin 3.3.0. The main new features are:
+
+- new import and export modules
+- changes tracking
+- synchronizing structure and data between servers
+- replication support
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+http://sourceforge.net/projects/phpmyadmin to download.
+
+Marc Delisle, for the team

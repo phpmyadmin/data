@@ -1,0 +1,340 @@
+       _           __  __          _       _           _
+ _ __ | |__  _ __ |  \/  |_   _   / \   __| |_ __ ___ (_)_ __
+| '_ \| '_ \| '_ \| |\/| | | | | / _ \ / _` | '_ ` _ \| | '_ \
+| |_) | | | | |_) | |  | | |_| |/ ___ \ (_| | | | | | | | | | |
+| .__/|_| |_| .__/|_|  |_|\__, /_/   \_\__,_|_| |_| |_|_|_| |_|
+|_|         |_|           |___/                                  2.6.0
+                                  http://www.phpmyadmin.net
+
+phpMyAdmin 2.6.0 - September 27th, 2004
+=======================================
+
+   A set of PHP-scripts to manage MySQL over the Web.
+   --------------------------------------------------
+
+Announcement
+------------
+
+    The phpMyAdmin Project is proud to announce the immediate availability of
+    phpMyAdmin 2.6.0.
+
+    Supporting the new improved MySQL extension of PHP5 (MySQLi), phpMyAdmin has
+    made a giant step towards the new PHP version and the upcoming MySQL versions.
+
+    phpMyAdmin has acquired a new CSS-based theme system. Two
+    themes are included, and can be chosen from the main menu. Documentation
+    is included (see FAQ 2.7) to create your own themes.
+
+    phpMyAdmin is a web administration tool for MySQL databases, intended to
+    handle a whole database server as well as a single database. Over the years,
+    it has become the most popular GUI for MySQL and is downloaded about 6,000
+    times a day, according to SourceForge.net.
+
+    The highlights of this release in detail:
+
+Highlights
+----------
+  Upgrade note:
+
+     If you are using MySQL 4.1.2 or later, the pmadb must be in UTF-8. See
+     "Linked-tables infrastructure" in Documentation.html for a way to
+     correctly create the pmadb, or upgrade it.
+
+  Improvements:
+
+     * PHP 5 mysqli extension support
+           o better performance
+           o improved security
+     * Improved support for character sets
+     * Support for UTF-8 databases under MySQL 4.1
+     * Site-configurable header and footer
+     * Export:
+           o can add custom text to SQL export headers
+           o support for IF NOT EXISTS
+           o support for INSERT IGNORE and UPDATE IGNORE
+           o use unbuffered queries
+           o enclosing SQL export in a transaction
+           o selective row export
+           o improved ANSI compatibility
+     * Operations: now copy table defaults to "structure and data"
+     * Operations: database renaming
+     * Editing: option "Go back to this page"
+     * Sort: natural order (configurable)
+     * Search page: DISTINCT, IS NULL, IS NOT NULL, NOT LIKE, multiple choices for ENUM
+     * Left panel Logout link
+     * Popup calendar (date and time editing) for date, datetime and timestamp fields
+     * Set and alter collations for databases, tables and fields
+     * Security: Protection against cookie hijacking: encrypt also the user name, and set a time 
+       limit on the validity of encrypted password in the cookie
+     * "(Un)check all" link for privileges page
+     * (alpha2)Optional display of server choice as links
+     * (alpha2)Click on result row to mark the checkbox
+     * (alpha2)Show if BLOB is NULL
+     * (alpha2)Mouse cursor in db structure and table structure views
+     * (alpha2)Multiple row insert
+     * (alpha2)Search: new choice LIKE %...%
+     * (alpha2)Can now change the number of columns when adding fields
+     * (beta1)Graphical redesign (CSS-based) and theme management
+     * (beta1)InnoDB table defragmentation
+     * (beta1)Use one cookie per server
+     * (beta1)Default query can now contain field names
+     * (beta1)MySQL 4.1.2 support ("engine")
+     * (beta1)Export: experimental native Ms Excel support
+     * (beta1)Export: add FOREIGN_KEY_CHECKS=0
+     * (beta1)Auth: catch error when server is not responding
+     * (beta1)Operations: can now specify sort order for "Alter table order by"
+     * (beta1)Support for SHA1 function
+     * (beta1)Enable Relation view for InnoDB even if internal relations infrastructure is not in place
+     * (rc1)Export: hexadecimal encoding of binary fields is now optional
+     * (rc1)Database statistics: add collations
+     * (rc1)Now it's possible to choose our connection character set
+     * (rc1)Support for GROUP_CONCAT()
+     * (rc1)Improved sort order in dropdown list of foreign value
+     * (rc2)Support for SHOW STORAGE ENGINES and SHOW TABLE TYPES
+     * (rc2)Check the privileges of the anonymous user
+     * (rc2)Themes version number
+     * (rc2)Search data work whatever the connection charset
+     * (rc2)Support BINARY and VARBINARY data types
+     * (rc2)Save chosen connection charset into a cookie
+     * (rc2)Search: do not offer "LIKE %...%" as default because of performance issues
+     * (rc2)Adding fields dialog: better look
+
+   Fixes:
+
+     * Error parsing floating point digit and GRANT...TO
+     * Numeric field names
+     * Keyword field names become capitalized
+     * Substr transformation broken with utf-8
+     * CONSTRAINT error in MySQL 3.23.x
+     * MySQL charsets not added to WHERE clauses
+     * Export:
+           o on-the-fly compression problem
+           o CSV problem with double-byte characters
+           o UPDATE option does not work
+     * Editing:
+           o Invalid escaping of + in ENUM
+           o Undefined submit_mult
+           o Cannot edit first row when no primary key
+           o Cannot edit big table structure
+           o Multi-edit: changes are lost
+           o Editing of double and float numbers
+           o Charset information was lost when changing fields
+     * Invalid row count when emptying table
+     * Error on Delete link after a db search
+     * Interface: Icons not displayed for index management
+     * Problem when the query contains quotes
+     * Wrong detection of the CREATE privilege
+     * Problem when the bookmark table does not exist
+     * Password error when copying a user
+     * Search page and empty VARCHAR column
+     * IIS crash: header problem
+     * (alpha2)Invalid SQL on empty table export
+     * (alpha2)Multi-byte functions and windows- charsets
+     * (alpha2)Handling of USE in multiple queries
+     * (alpha2)Light mode undefined indices
+     * (alpha2)Consistent window layout for query window
+     * (alpha2)Missing localization for multi-row edit/delete/export
+     * (alpha2)Data dictionary: wrong formatting
+     * (alpha2)Uploading with UploadDir and open_basedir restriction
+     * (alpha2)Handling of complex sort queries
+     * (alpha2)Nested mode: collapsing problem
+     * (alpha2)Multi-edit: wrong tabindex ids
+     * (alpha2)Calendar: maximum values
+     * (alpha2)Privileges: wrong message when editing for non-existent db
+     * (alpha2)Parser and multibyte strings
+     * (alpha2)Browsing of foreign table: problem with encoding of the primary key reference
+     * (alpha2)Cookie login: avoid double frames
+     * (alpha2)Nested table now also works with aliases tablenames
+     * (beta1)Nested table: wrong group expanding (foreign characters)
+     * (beta1)Shorten query for edit/delete
+     * (beta1)Database search: use SELECT *
+     * (beta1)Error when deleting last row
+     * (beta1)Vertical mode: broken row highlighting
+     * (beta1)Better handling of MySQL comments (-- followed by any control character)
+     * (beta1)Wrong internal encoding for Hebrew
+     * (beta1)Ignore comments for SQL splitting
+     * (beta1)Synchronize left frame database drop-down box (number of tables)
+     * (beta2)Undefined index in left frame
+     * (beta2)Undefined variable db
+     * (beta2)Granting privileges does not take wildcards into account
+     * (beta2)Left frame does not reload on CREATE TABLE
+     * (beta2)Exporting and more than one foreign key
+     * (beta2)Javascript error when changing theme
+     * (beta2)Warning in mysql.dbi.lib.php
+     * (beta2)During table creation, query window tries to get the list of fields
+     * (rc1)Security: fixes vulnerability disclosed on BUGTRAQ on 2004-06-29
+     * (rc1)Export: Fix export of '0' strings
+     * (rc1)Export: Fix export of queries with empty WHERE clause
+     * (rc1)Copying a table containing a TIMESTAMP under MySQL 4.1.2+
+     * (rc1)Could not create a primary key when there was none before
+     * (rc1)DATETIME field export under MySQL 4.1.3
+     * (rc1)Error copying table data only
+     * (rc1)Navigation: last page button did not show last page number
+     * (rc1)Functions: some functions do not take parameters
+     * (rc1)Wrong table options for non-MyISAM tables
+     * (rc1)Undefined offset when no display field has been defined
+     * (rc2)Encoding tis-620 is not multibyte
+     * (rc2)Export and Excel 2003 behavior
+     * (rc2)Undefined offset in blowfish.php when user upgrades over the same directory
+     * (rc2)Export and empty BLOB
+     * (rc2)"Illegal mix of collations" at various places
+     * (rc2)Was showing the port number after the verbose name
+     * (rc2)Export and TIMESTAMP
+     * (rc2)"Commands out of sync" at various places
+     * (rc2)Could not upload a binary field (under mysqli)
+     * (rc2)Collation problems with the relational tables
+     * (rc2)Export and handling of -- and # comments
+     * (rc2)Problem with the appending of LIMIT clause
+     * (rc2)Data editing: do not empty protected values
+     * (rc2)Calendar popup problem with certain months
+     * (rc2)Problem with foreign key drop-downs
+     * (rc3)Sometimes the calendar popup does not appear
+     * (rc3)Database wrongly named "5"
+     * (rc3)Error clicking on Insert tab
+     * (rc3)Administration: cannot manipulate a user like "user@..."
+     * (rc3)Error when ordering by count( * )
+     * (rc3)Browsing foreigners: paging did not work, and data did not return to the 
+        field when called from the Search sub-page
+     * (rc3)Cookie auth_type: Now remembers database
+     * (rc3)Theme version checking improved
+     * (rc3)Top left frame not loading (Safari 1.2.3)
+     * (rc3)Consistency of the XHTML labels
+     * (rc3)Focus no longer kept on the databases drop-down
+     * (rc3)Really use the compress option in mysql protocol
+     * (rc3)Tell the client library to use CLIENT_LOCAL_FILES
+     * (rc3)Could not import non-UTF-8 exports
+     * (final)Query window's Import Files submit button
+     * (final)Default value of ThemePath
+     * (final)Export of "0" string
+     * (final)File upload and open_basedir problem
+     * (final)Left frame not reloaded after reading of export file
+
+   Detailed list of changes since version 2.2.0 is available under
+   http://www.phpmyadmin.net/ChangeLog.txt
+
+
+Availability
+------------
+
+     This software is available under the GNU General Public License V2.0.
+
+     You can get the newest version at http://www.phpmyadmin.net/
+     Available file formats are: .zip, .tar.gz and .tar.bz2.
+
+     If you install phpMyAdmin on your system, it's recommended to
+     subscribe to the news mailing list by adding your address under
+        http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+
+     This way, you will be informed of new updates and security fixes.
+     It is a read only list, and traffic is not greater than a few
+     mail every year.
+
+
+Support and Documentation
+-------------------------
+
+     The documentation is included in the software package as text and
+     HTML file, but can also be downloaded from:
+
+        http://www.phpmyadmin.net/documentation/
+
+     There are localized versions of the documentation for some languages,
+     available on the site.
+
+     The software is provided as is without any express or implied
+     warranty, but there is a bugs tracker page under:
+
+        http://sourceforge.net/projects/phpmyadmin/   [click on "Bugs"]
+
+     In addition, there are also a number of discussion lists
+     related to phpMyAdmin.  A list of mailing lists with archives
+     is available at:
+
+        http://sourceforge.net/mail/?group_id=23067  or
+        http://sourceforge.net/projects/phpmyadmin/   [click on "Lists"]
+
+     Finally, an users support forum is also available under:
+
+        http://sourceforge.net/forum/forum.php?forum_id=72909
+
+
+Known bugs
+----------
+
+   - phpMyAdmin SQL parser chokes on fieldnames with certain non-ASCII characters
+     (bugs #593598, #936161).
+
+   - An "Illegal mix of collations" error happens on the Search page under
+     certain circumstances, on MySQL versions 4.1.x and later
+     (bug #1033388)
+
+   To be informed about new releases fixing these problems, please
+   subscribe to the news mailing list under
+     http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+   or regularly check the sourceforge bugs tracker.
+
+
+Donations
+---------
+
+   The project accepts donations to help improve the product. There is
+   a "Donations" link on http://www.phpmyadmin.net.
+
+
+Description
+-----------
+
+   phpMyAdmin is intended to handle the administration of MySQL over the Web. It
+   can manage a whole MySQL server as well as a single database.
+
+     Currently it can:
+       - create and drop databases
+       - create, copy, drop, rename and alter tables
+       - do table maintenance
+       - delete, edit and add fields
+       - execute any SQL-statement, even batch-queries
+       - manage keys on fields
+       - load text files into tables
+       - create and read dumps of tables
+       - export data to CSV, XML and Latex formats
+       - administer multiple servers
+       - manage MySQL users and privileges
+       - check referential integrity
+       - using Query-by-example (QBE), create complex queries automatically
+         connecting required tables
+       - create PDF graphics of your Database layout
+       - search globally in a database or a subset of it
+       - communicate in 47 different languages
+
+
+Authors & Copyright
+-------------------
+
+     Copyright (C) 1998-2000 Tobias Ratschiller <tobias_at_ratschiller.com>
+     Copyright (C) 2001-2004 Marc Delisle <DelislMa_at_CollegeSherbrooke.qc.ca>
+                             Olivier Müller <om_at_omnis.ch>
+                             Robin Johnson <robbat2_at_users.sourceforge.net>
+                             Alexander M. Turek <me_at_derrabus.de>
+                             Michal Cihar <michal_at_cihar.com>
+                             Garvin Hicking <me_at_supergarv.de>
+                             Marcel Tschopp <ne0x_at_users.sourceforge.net>
+                             + many other people
+                               (check the CREDITS section of our documentation)
+
+     This program is free software; you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation; either version 2 of the License, or
+     (at your option) any later version.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with this program; if not, write to the Free Software
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
+
+
+
+EOF -- Alexander M. Turek and Marc Delisle/ 2004-09-27

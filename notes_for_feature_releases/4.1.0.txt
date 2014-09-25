@@ -1,0 +1,39 @@
+Welcome to phpMyAdmin 4.1.0.
+
+This release contains many improvements and bug fixes. With this release
+the minimum supported PHP version is now 5.3 and the minimum MySQL
+version is 5.5.
+
+A few highlights include:
+
+*Allow specifying a port when connecting to the controlhost
+
+*User interface improvements to server privileges, view creation, the
+Operations tab, Relation View, and when creating new users
+
+*Added support for AES_ENCRYPT on BLOB columns
+
+*Added support for relations with ndbcluser
+
+*Added optional ReCAPTCHA support during login
+
+*Added support for fractional seconds in time, datetime, and timestamp
+columns
+
+*Added find and replace by column
+
+*Added the Error Reporting Component, an optional feature allowing
+users to report certain errors directly to the phpMyAdmin bug team
+
+*Added configurable menus (so an administrator can hide certain
+features)
+
+The SQP and MySQLManual* configuration directives have been removed.
+
+For complete information, please view changelog.php or the ChangeLog
+file, included with this release.
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+https://sourceforge.net/projects/phpmyadmin/files to download.
+
+The phpMyAdmin team

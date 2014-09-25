@@ -1,0 +1,18 @@
+Welcome to phpMyAdmin 4.2. This release contains several improvements
+and bug fixes. This version removes support for the deprecated PHP
+extension "mysql".
+
+Some highlights include:
+* Added the ability to save and load queries in Query By Example.
+* Navigation tabs are now fixed and don't scroll off screen.
+* Easily add a function to all rows when inserting several rows at once.
+* Added a favorite tables feature for quick access to often-used tables.
+* Quick filter displayed rows.
+
+You can read the complete list of changes by referring to changelog.php
+or ChangeLog file, included with this release.
+
+Details will appear on http://phpmyadmin.net. You can also visit
+https://sourceforge.net/projects/phpmyadmin/files to download.
+
+The phpMyAdmin team

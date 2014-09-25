@@ -1,0 +1,15 @@
+Welcome to phpMyAdmin 3.4.0, presenting a new default theme. This
+release contains new features, especially:
+
+* User preferences
+* Relation schema export to multiple formats
+* ENUM/SET editor
+* Simplified interface for export/import
+* AJAXification of some parts
+* Charts
+* Visual query builder
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+http://sourceforge.net/projects/phpmyadmin to download.
+
+Marc Delisle, for the team

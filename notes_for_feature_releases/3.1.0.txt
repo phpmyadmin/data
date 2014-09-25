@@ -1,0 +1,6 @@
+Welcome to phpMyAdmin 3.1.0. This version has a new setup mechanism and 
+supports BLOBstreaming and the Swekey hardware authentication.
+
+Downloads/details on http://phpmyadmin.net.
+
+Marc Delisle, for the team

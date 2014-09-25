@@ -1,0 +1,26 @@
+The phpMyAdmin development team are pleased to announce the release of the
+latest stable version, 2.3.0.
+
+Changes since 2.2.6:
+UTF-8 support
+Syntax coloring of SQL statements
+Schema output in PDF
+Print view for SQL results
+EXPLAIN support
+Full database search
+IP-based Allow/Deny
+XML export
+New SQL Parser
+New Languages: Slovenian, Afrikaans, Hindi
+Lots of bug fixes.
+
+Packages are ready under http://www.phpmyadmin.net/
+
+Please report bugs to the -devel mailing list or on the tracker under:
+http://sourceforge.net/tracker/?atid=377408&group_id=23067&func=browse
+
+We have also released 2.2.7 without the new features, but with the bug
+fixes found in 2.3.0.
+
+Regards,
+Robin, Marc, Loïc, Alexander, and the rest of the development team.

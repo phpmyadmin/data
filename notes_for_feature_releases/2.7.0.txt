@@ -1,0 +1,202 @@
+           _           __  __          _       _           _
+     _ __ | |__  _ __ |  \/  |_   _   / \   __| |_ __ ___ (_)_ __
+    | "_ \| "_ \| "_ \| |\/| | | | | / _ \ / _` | "_ ` _ \| | "_ \
+    | |_) | | | | |_) | |  | | |_| |/ ___ \ (_| | | | | | | | | | |
+    | .__/|_| |_| .__/|_|  |_|\__, /_/   \_\__,_|_| |_| |_|_|_| |_|
+    |_|         |_|           |___/                                  2.7.0
+                                     http://www.phpmyadmin.net
+
+    phpMyAdmin 2.7.0 - December 4th, 2005
+
+      A set of PHP-scripts to administrate MySQL over the Web.
+      --------------------------------------------------------
+
+    Announcement
+    ------------
+
+       The phpMyAdmin Project is proud to announce the immediate availability
+       of phpMyAdmin 2.7.0.
+
+       phpMyAdmin is a web administration tool for MySQL databases, intended to
+       handle a whole database server as well as a single database. Over the years,
+       it has become the most popular Web GUI for MySQL and is downloaded between 6,000
+       and 14,000 times a day, according to SourceForge.net.
+
+
+    Highlights
+    ----------
+
+     Notes:
+
+     * Configuration files coming from before phpMyAdmin 2.3.0 (released
+on 2002-08-11)
+       are no longer supported.
+     * You can still use your config.inc.php file, but this file can be
+simplified,
+       containing only the parameters you want to change from their
+corresponding default
+       value in config.default.php.
+
+     Improvements:
+
+     * New plugin-based import module
+     * Some pages now use fieldsets for better look
+     * Better support for information_schema
+     * Upgrade script new options
+     * Better displaying of privileges when there are differences
+between the various
+       user definition tables
+     * Structure: count unique value for each field
+     * Can now limit the list of shown languages
+     * User-specific upload and save server directories
+     * Remove Drop tab for mysql database
+     * New transformation: SQL pretty printing
+     * Ability to limit maximum size of extended insert
+     * Support for searching in the foreign key window
+     * Can now replace an existing bookmark
+     * New shortcuts for IP rules
+     * Detect lack of privileges for "Create new table"
+
+     Fixes:
+
+     * Wrong display of localized MySQL error messages
+     * Need to select the primary key for MIME-based print view
+     * Handling of ENTER key when adding fields
+     * InnoDB: truncating icon and exact row count
+     * After dropping a db, links were missing
+     * Strict mode and auto-increment fields insertion
+     * Collation change for ENUM and SET
+     * Display problems on special characters in column name
+     * Links for MySQL documentation
+     * Escaping of "_"
+     * Could not edit privileges when different host in db and user
+     * Changing auto-increment value for InnoDB
+     * Correct sort order for foreign-key dropdowns
+     * Group database by rightmost separator
+     * Performance problem when inserting huge BLOBs
+     * Calendar popup and time beginning by 0
+     * ... and many more...
+
+
+      Detailed list of changes is available under
+      http://www.phpmyadmin.net/ChangeLog.txt
+
+
+    Availability
+    ------------
+        This software is available under the GNU General Public License
+V2.0.
+
+        You can get the newest version at http://www.phpmyadmin.net/
+        Available file formats are: .zip, .tar.gz and .tar.bz2.
+
+        If you install phpMyAdmin on your system, it's recommended to
+        subscribe to the news mailing list by adding your address under
+           http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+
+        This way, you will be informed of new updates and security fixes.
+        It is a read only list, and traffic is not greater than a few
+        mail every year.
+
+
+    Support and Documentation
+    -------------------------
+
+        The documentation is included in the software package as text and
+        HTML file, but can also be downloaded from:
+
+           http://www.phpmyadmin.net/documentation/
+
+
+        The software is provided as is without any express or implied
+        warranty, but there is a bugs tracker page under:
+
+           http://sourceforge.net/projects/phpmyadmin/   [click on "Bugs"]
+
+        In addition, there are also a number of discussion lists
+        related to phpMyAdmin.  A list of mailing lists with archives
+        is available at:
+
+           http://sourceforge.net/mail/?group_id=3D23067  or
+           http://sourceforge.net/projects/phpmyadmin/   [click on "Lists"]
+
+        Finally, an users support forum is also available under:
+
+           http://sourceforge.net/forum/forum.php?forum_id=3D72909
+
+
+    Known bugs
+    ----------
+
+      Please subscribe to the news mailing list under
+        http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+      or regularly check the sourceforge bugs tracker.
+
+
+    Donations
+    ---------
+      The project accepts donations to help improve the product. There is
+      a "Donations" link on http://www.phpmyadmin.net.
+
+
+    Description
+    -----------
+
+      phpMyAdmin handles the administration of MySQL over the Web. It
+      can manage a whole MySQL server as well as a single database.
+
+        Currently it can:
+          - create, copy, rename and drop databases
+          - create, copy, drop, rename and alter tables
+          - do table maintenance
+          - delete, edit and add fields
+          - execute any SQL-statement, even batch-queries
+          - manage keys on fields
+          - load text files into tables
+          - create and read dumps of tables
+          - export data to CSV, XML and Latex formats
+          - administer multiple servers
+          - manage MySQL users and privileges
+          - check referential integrity
+          - using Query-by-example (QBE), create complex queries
+automatically
+            connecting required tables
+          - create PDF graphics of your Database layout
+          - search globally in a database or a subset of it
+          - communicate in 50 different languages
+
+
+    Authors & Copyright
+    -------------------
+
+        Copyright (C) 1998-2000 Tobias Ratschiller <tobias_at_ratschiller..com>
+        Copyright (C) 2001-2005 Marc Delisle <Marc.Delisle_at_cegepsherbrooke.qc.ca>
+                                Olivier Müller <om_at_omnis.ch>
+                                Robin Johnson <robbat2_at_users.sourceforge.net>
+                                Alexander M. Turek <me_at_derrabus.de>
+                                Michal Cihar <michal_at_cihar.com>
+                                Garvin Hicking <me_at_supergarv.de>
+                                Marcel Tschopp <ne0x_at_users.sourceforge.net>
+                                Sebastian Mendel <cybot_tm_at_users.sourceforge.net>
+                                + many other people
+                                  (check the CREDITS section of our documentation)
+
+        This program is free software; you can redistribute it and/or mod=
+ify
+        it under the terms of the GNU General Public License as published=
+ by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
+
+
+
+  Marc Delisle/ 2005-12-04

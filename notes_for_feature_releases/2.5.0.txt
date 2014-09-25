@@ -1,0 +1,102 @@
+The Internet, 2003-05-11
+
+To: phpMyAdmin community
+
+The development team is pleased to announce version 2.5.0 of phpMyAdmin.
+
+
+MySQL 4.1 note:
+
+phpMyAdmin 2.5.0 is not ready for MySQL 4.1.
+
+
+About future versions:
+
+The versions after 2.5.x will have those requirements:
+PHP >=4.1.0 and MySQL >=3.23.32.
+
+
+Improvements:
+
+     * distinct Query window
+     * field contents transformations (inline resized images, links, 
+external programs, etc)
+     * display column comments in exports
+     * automatic update of relations, display fields, comments, 
+bookmarks, etc after table/column changes
+     * new display mode with 90 degree rotated headers
+     * display query time
+     * js row marker now works in vertical mode
+     * SQL history: db- or not-db-based
+     * optional vertical display of the columns in edit mode
+     * optional lightweight menu tabs
+     * InnoDB status monitor
+     * print button in db view
+     * new Export page with dynamic options
+     * better security for docSQL importer
+     * in edit mode, display first the functions that match field type
+     * parameters for bookmarks queries
+     * support for changing auto-increment value
+     * default initial query in browse mode, based on a bookmark with 
+the same name as the table
+     * execute bookmarks when browsing bookmarks table
+     * if available, display Create/Update/Check_time
+     * in browse mode, highlight the fields used in the WHERE condition 
+for the query
+     * automatic layout of the PDF schema
+     * choose results page in browse mode
+     * automatic detection of compression for uploaded data
+     * CHECK TABLE/ANALYZE TABLE for multisubmit actions
+     * support for SHOW FULL PROCESSLIST
+     * can now insert multiple fields at cursor position in the query 
+textarea
+     * can now choose all segments of a key (relations)
+
+
+Fixes:
+
+     * could not insert some words like "$enum$"
+     * bad URL (extra /) for generated PDFs
+     * double password query with http auth
+     * check privileges only shows root user
+     * display SQL query used for an index modification
+     * pdf schema headers footers for long pages
+     * export results and LIMIT
+     * inserting values with quotes
+     * $cfg['PmaAbsoluteUri'] autodetection and CGI mode
+     * escaping of \n, \r and \t characters
+     * handling of disabled ini_get()
+     * go back to fields definition form after an error
+     * support XOR in the parser
+     * check for field type when doing charset conversion
+     * support for HTML entities as db/table/column names
+     * avoid long delays when browsing big tables (MySQL 4)
+     * support for host-based privileges
+     * bad arrow aligning on PDF schema in "same widths" mode
+     * faster record count
+     * "undefined index" error in the data dictionary when using MySQL 
+3.22 or below
+     * the privileges administration script did not work well with 
+host-based DB privileges
+     * having added a new user, the corresponding SQL query was not 
+displayed
+     * better "superuser" checking mechanism
+     * "wrong parameter count" error when connecting with some strangely 
+compiled php versions
+     * replaced the %e placeholder in the date format string of some 
+translations because it did not have any effect on Windows machines.
+     * unaligned column headers
+     * MONTH() and YEAR() not displayed as functions
+     * error on "Skip Explain SQL"
+     * bad Edit link on tables without primary key but with BLOB
+     * now we export BLOBs hex quoted
+     * better check for superuser in MySQL 4
+     * 2.5.0-rc1 syntax error SHOW TABLE STATUS LIKE...
+     * highlight fields crossing db borders
+     * FULLTEXT index type not shown in drop-down
+     * disable CSV export for multiple tables
+
+
+Download links, as usual, on http://www.phpmyadmin.net
+
+Marc Delisle, for the team.

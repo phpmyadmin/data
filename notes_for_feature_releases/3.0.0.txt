@@ -1,0 +1,8 @@
+Welcome to phpMyAdmin 3.0.0. This version supports various features of 
+MySQL 5.1 and the Maria and PBXT storage engines.
+
+The 3.0 series requires PHP 5.2+ and MySQL 5.0+.
+
+Downloads/details from http://phpmyadmin.net.
+
+Marc Delisle, for the team

@@ -1,0 +1,21 @@
+Welcome to phpMyAdmin 3.5.0; here are the major new features:
+
+* browse-mode improvements
+** grid editing
+** remember recent tables
+** remember last sort order by table
+** flexible column width
+** reorder columns
+** more compact navigation bar
+* AJAXification of many operations
+* reorganised server status page, with server monitoring
+* improved support for stored routines, events and triggers
+* openGIS support
+* zoom-search in table search
+* Drizzle support
+* improved ENUM/SET editor
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+http://sourceforge.net/projects/phpmyadmin to download.
+
+Marc Delisle, for the team

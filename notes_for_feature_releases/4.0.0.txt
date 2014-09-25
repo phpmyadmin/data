@@ -1,0 +1,11 @@
+Welcome to phpMyAdmin 4.0.0. With this version, the HTML frames are gone 
+and the navigation panel now presents a tree. This version requires 
+Javascript.
+
+Version 4.0 contains many bug fixes and smaller new features; moreover,
+the documentation has a new look and contains an index.
+
+Details will appear on http://phpmyadmin.net. In a hurry? you can visit
+https://sourceforge.net/projects/phpmyadmin/files to download.
+
+Marc Delisle, for the team

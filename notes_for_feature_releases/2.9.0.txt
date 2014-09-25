@@ -1,0 +1,184 @@
+            _           __  __          _       _           _
+      _ __ | |__  _ __ |  \/  |_   _   / \   __| |_ __ ___ (_)_ __
+     | "_ \| "_ \| "_ \| |\/| | | | | / _ \ / _` | "_ ` _ \| | "_ \
+     | |_) | | | | |_) | |  | | |_| |/ ___ \ (_| | | | | | | | | | |
+     | .__/|_| |_| .__/|_|  |_|\__, /_/   \_\__,_|_| |_| |_|_|_| |_|
+     |_|         |_|           |___/                           2.9.0
+                                      http://www.phpmyadmin.net
+
+phpMyAdmin 2.9.0 - September 20, 2006
+
+A set of PHP-scripts to administrate MySQL over the Web.
+--------------------------------------------------------
+
+Announcement
+------------
+
+The phpMyAdmin Project is proud to announce the immediate availability
+of phpMyAdmin 2.9.0.
+
+phpMyAdmin is a web administration tool for MySQL databases, intended to
+handle a whole database server as well as a single database. Over the
+years, it has become the most popular Web GUI for MySQL and is
+downloaded between 6,000 and 14,000 times a day, according to
+SourceForge.net.
+
+
+Improvements
+------------
+
+* Improved readability of setup panels
+* PDF schema: automatic layout for InnoDB
+* Font size selector on main page
+* Export: support for procedures and functions
+* Can hide "Create Database" dialog
+* Customizable link under left logo
+* Export: "Open Document Text", "Open Document spreadsheet" formats
+* Export: new plugin architecture
+* User management: can create a db with the same name as created user
+* Use IEC binary units (KiB, MiB, ...)
+* Import: SQL compatibility selector
+* Possibility of using external authentication
+   and use an empty MySQL password
+* Display MySQL warnings
+* Links to language-specific MySQL doc whenever possible
+
+
+
+Detailed list of changes is available under
+http://www.phpmyadmin.net/ChangeLog.txt
+
+
+Availability
+------------
+
+This software is available under the GNU General Public License V2.0.
+
+You can get the newest version at http://www.phpmyadmin.net/
+Available file formats are: .zip, .tar.gz and .tar.bz2.
+
+If you install phpMyAdmin on your system, it's recommended to
+subscribe to the news mailing list by adding your address under
+http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+
+This way, you will be informed of new updates and security fixes.
+It is a read only list, and traffic is not greater than a few
+mail every year.
+
+
+Support and Documentation
+-------------------------
+
+The documentation is included in the software package as text and
+HTML file, but can also be downloaded from:
+
+http://www.phpmyadmin.net/documentation/
+
+
+The software is provided as is without any express or implied
+warranty, but there is a bugs tracker page under:
+
+http://sourceforge.net/projects/phpmyadmin/   [click on "Bugs"]
+
+In addition, there are also a number of discussion lists
+related to phpMyAdmin.  A list of mailing lists with archives
+is available at:
+
+http://sourceforge.net/mail/?group_id=3D23067  or
+http://sourceforge.net/projects/phpmyadmin/   [click on "Lists"]
+
+Finally, an users support forum is also available under:
+
+http://sourceforge.net/forum/forum.php?forum_id=3D72909
+
+
+Known bugs
+----------
+
+Please subscribe to the news mailing list under
+http://lists.sourceforge.net/lists/listinfo/phpmyadmin-news
+or regularly check the sourceforge bugs tracker.
+
+
+Donations
+---------
+The project accepts donations to help improve the product. There is
+a "Donations" link on http://www.phpmyadmin.net.
+
+
+Description
+-----------
+
+(from http://www.phpmyadmin.net/documentation)
+phpMyAdmin handles the administration of MySQL over the Web. It
+can manage a whole MySQL server as well as a single database.
+
+Currently it can:
+
+* easily browse through databases and tables
+* create, copy, rename, alter and drop databases
+* create, copy, rename, alter and drop tables
+* do table maintenance
+* add, edit and drop fields
+* execute any SQL-statement, even multiple queries
+* create, alter and drop indexes
+* load text files into tables
+* create (*) and read dumps of tables or databases
+* export (*) data to SQL, CSV, XML, Word, Excel, PDF and Latex formats
+* administer multiple servers
+* manage MySQL users and privileges
+* check server settings and runtime information with configuration hints
+* check referential integrity in MyISAM tables
+* using Query-by-example (QBE), create complex queries automatically
+   connecting required tables
+* create PDF graphics of your Database layout
+* search globally in a database or a subset of it
+* transform stored data into any format using a set of predefined functio=
+ns,
+   like displaying BLOB-data as image or download-link
+* support InnoDB tables and foreign keys (see FAQ 3.6)
+* support mysqli, the improved MySQL extension (see FAQ 1.17)
+* communicate in 50 different languages
+
+   (*)  phpMyAdmin can compress (Zip, GZip -RFC 1952- or Bzip2 formats)
+        dumps and CSV exports if you use PHP4 >=3D 4.0.4 with Zlib suppor t
+        (--with-zlib) and/or Bzip2 support (--with-bz2).
+
+
+Authors & Copyright
+-------------------
+
+Copyright (C) 1998-2000
+      Tobias Ratschiller <tobias_at_ratschiller.com>
+
+Copyright (C) 2001-2006
+       Marc Delisle <Marc.Delisle_at_cegepsherbrooke.qc.ca>
+       Olivier Müller <om_at_omnis.ch>
+       Robin Johnson <robbat2_at_users.sourceforge.net>
+       Alexander M. Turek <me_at_derrabus.de>
+       Michal Cihar <michal_at_cihar.com>
+       Garvin Hicking <me_at_supergarv.de>
+       Sebastian Mendel <cybot_tm_at_users.sourceforge.net>
+         + many other people
+         (check the CREDITS section of our documentation)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to
+
+Free Software Foundation, Inc.,
+59 Temple Place, Suite 330,
+Boston, MA 02111-1307  USA
+
+
+
+Marc Delisle / 2006-09-20
