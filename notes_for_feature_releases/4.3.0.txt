@@ -46,29 +46,27 @@ The biggest improvement Madhura has brought to 4.3 is increased speed and perfor
 when operating with many (thousands) databases, such as in a shared hosting environment.
 
 Some of the new features are:
-+ rfe #1502 Smart sorting for int keys
-+ rfe #1521 Confirmation message when dropping user(s)
-+ rfe #1518 Confirm dialog on accidentally leaving a page
-+ rfe #1448 Allow clicking an approximate row count to get a correct one
-+ rfe #982  Support for editing binary fields in hexadecimal
-+           MariaDB 10+ multi-master replication support
-+ rfe       Allow saving query charts as images
-+ rfe #759  Use aliases in SQL export for tables and columns
-+ rfe #755  Export with table/column name changes
-+ rfe #1490 Dynamic process list
-+ rfe #1522 Drag and Drop SQL import
-+ rfe #1145 Preview SQL instead of executing it
-+ rfe #869  Run SQL query: Allow rollback for InnoDB tables
-+ rfe #1123 Zeroconf PMA tables support
-+ rfe #857  Regexp replace
-+ rfe #1529 Avoid session timeout when user is active
-+ rfe #1492 Remove the distinct query window / Add SQL log+history panel
-+ rfe #1544 MySQL 5.7.5 compatibility
-+ rfe #1529 Avoid session timeout when user is active
-+ rfe #919  Multiple-column foreign key relation
-+ rfe #1527 Charts for data in <x-axis, series, value> format
-+ rfe #654  Range Search Capability
-+ rfe #908  Improvements for the table editor (index creation)
-
+* Smart sorting for int keys
+* Confirmation message when dropping user(s)
+* Confirm dialog on accidentally leaving a page
+* Allow clicking an approximate row count to get a correct one
+* Support for editing binary fields in hexadecimal
+* MariaDB 10+ multi-master replication support
+* Allow saving query charts as images
+* Use aliases in SQL export for tables and columns
+* Export with table/column name changes
+* Dynamic process list
+* Drag and Drop SQL import
+* Preview SQL instead of executing it
+* Run SQL query: Allow rollback for InnoDB tables
+* Zeroconf PMA tables support
+* Regexp replace
+* Avoid session timeout when user is active
+* MySQL 5.7.5 compatibility
+* Avoid session timeout when user is active
+* Multiple-column foreign key relation
+* Charts for data in <x-axis, series, value> format
+* Range Search Capability
+* Improvements for the table editor (index creation)
 
 The phpMyAdmin team
