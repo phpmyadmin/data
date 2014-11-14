@@ -1,0 +1,74 @@
+Welcome to phpMyAdmin 4.3. This release contains many bug fixes and several
+new features including the work done by our Google Summer of Code (GSoC)
+students, and is the first release since the hiring of a full-time
+developer. Read on for more information or skip directly to the
+download at https://sourceforge.net/projects/phpmyadmin/files or always read
+the complete list of changes by referring to the changelog.php or ChangeLog
+files, included with this release.
+
+First, some information on our featured GSoC projects:
+
+Smita Kumari worked on two structure tools,
+1) “a feature that enables a user to maintain a central list of columns per database
+to avoid similar name for the same data element and bring consistency of data
+type for the same data element.”
+
+2) Automated normalization is known as "Improve table structure" within phpMyAdmin.
+It helps to bring the table structure upto Third Normal Form. A wizard is
+presented to user which asks questions about the elements during the various
+steps for normalization and a new structure is proposed accordingly to bring the
+table optionally into the First/Second/Third Normal form.
+
+Edward Cheng implemented a component which provides easy access to a console,
+including bookmarking and a history viewer.
+
+Chirayu Chiripal and Ashutosh Dhundhara both worked on many feature improvements.
+These improvements may not be glamorous but feature some much needed maintenance
+and minor improvements.
+
+Behind the scenes, Dhananjay Nakrani has improved the error reporting server,
+an optional reporting feature allowing users to automatically submit error
+reports directly to the phpMyAdmin developers. Now, PHP errors can also be reported.
+
+Additional behind the scenes work was done by Bimal Yashodha to refactor the code
+behind the Designer interface. Most of these improvements are transparent to users
+but help ease the maintenance  required on this portion of the code.
+
+Our second piece of exciting news is that this release includes many improvements
+thanks to our new full-time developer, Madhura Jayaratne.
+
+"I am so excited to be working for phpMyAdmin as a contract developer and since
+I started working, my focus has mainly been on stabilizing the code for the upcoming
+version 4.3 release. This involved fixing a number of bugs as well as improving
+performance, which was due for some time.”
+
+The biggest improvement Madhura has brought to 4.3 is increased speed and performance
+when operating with many (thousands) databases, such as in a shared hosting environment.
+
+Some of the new features are:
++ rfe #1502 Smart sorting for int keys
++ rfe #1521 Confirmation message when dropping user(s)
++ rfe #1518 Confirm dialog on accidentally leaving a page
++ rfe #1448 Allow clicking an approximate row count to get a correct one
++ rfe #982  Support for editing binary fields in hexadecimal
++           MariaDB 10+ multi-master replication support
++ rfe       Allow saving query charts as images
++ rfe #759  Use aliases in SQL export for tables and columns
++ rfe #755  Export with table/column name changes
++ rfe #1490 Dynamic process list
++ rfe #1522 Drag and Drop SQL import
++ rfe #1145 Preview SQL instead of executing it
++ rfe #869  Run SQL query: Allow rollback for InnoDB tables
++ rfe #1123 Zeroconf PMA tables support
++ rfe #857  Regexp replace
++ rfe #1529 Avoid session timeout when user is active
++ rfe #1492 Remove the distinct query window / Add SQL log+history panel
++ rfe #1544 MySQL 5.7.5 compatibility
++ rfe #1529 Avoid session timeout when user is active
++ rfe #919  Multiple-column foreign key relation
++ rfe #1527 Charts for data in <x-axis, series, value> format
++ rfe #654  Range Search Capability
++ rfe #908  Improvements for the table editor (index creation)
+
+
+The phpMyAdmin team
