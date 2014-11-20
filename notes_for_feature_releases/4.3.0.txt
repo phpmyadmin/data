@@ -68,5 +68,6 @@ Some of the new features are:
 * Charts for data in <x-axis, series, value> format
 * Range Search Capability
 * Improvements for the table editor (index creation)
+* PHP OpenSSL support for cookie encryption/decryption
 
 The phpMyAdmin team
