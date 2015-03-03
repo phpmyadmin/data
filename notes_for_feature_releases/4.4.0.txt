@@ -1,0 +1,21 @@
+Welcome to phpMyAdmin 4.4.0, an incremental feature release including many bug fixes.
+
+A complete list of new features and bugs fixed is available in the ChangeLog file or
+changelog.php included with this release.
+
+A few highlights:
+* Rename configuration directive from $cfg['NavigationTreeDisableDatabaseExpansion']
+  to $cfg['NavigationTreeEnableExpansion'] -- if used, please update your config.inc.php
+* Move the SQL scripts to create phpMyAdmin configuration storage from 'examples' to 'sql' directory
+* Upgrade Recaptcha to version 2 of the API
+* Added support for the SSL GRANT option
+* Improvements to the table structure and tracking pages
+* Improvements to the console feature
+* Improvments to the ZeroConf feature
+
+There are many more; please refer to the ChangeLog for full details.
+
+As always, downloads are available at http://www.phpmyadmin.net
+
+The phpMyAdmin Team
+
