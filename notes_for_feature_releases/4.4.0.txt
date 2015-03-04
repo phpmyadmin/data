@@ -11,7 +11,7 @@ A few highlights:
 * Added support for the SSL GRANT option
 * Improvements to the table structure and tracking pages
 * Improvements to the console feature
-* Improvments to the ZeroConf feature
+* Improvements to the ZeroConf feature
 
 There are many more; please refer to the ChangeLog for full details.
 
