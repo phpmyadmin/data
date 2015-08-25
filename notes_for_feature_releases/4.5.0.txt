@@ -1,0 +1,35 @@
+Welcome to phpMyAdmin 4.5.0, which includes many improvements thanks to our Google
+Summer of Code students and other contributors. With this release, the minimum required PHP version
+is now 5.5 (older versions have reached End Of Life and are no longer supported by PHP).
+
+A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
+changelog.php included with this release.
+
+A few highlights:
+* Improvements to the Console feature
+* Include structure in PDF export
+* Validate data before import
+* Support Checksum table type
+* Improved operations regarding partitions
+* Alter privileges when renaming or copying a database or table
+* Several improvements related to speed and responsiveness
+* Improved print view
+* Use CTRL or ALT plus arrow keys to navigate in grid editor
+* Use plain-English destinations for $cfg['NavigationTreeDefaultTabTable'], $cfg['DefaultTabServer'],
+  $cfg['DefaultTabDatabase'], and $cfg['DefaultTabTable']. The old style values will still work, but
+  this makes it easier for new users to easily understand the destination links.
+* Integrate SQL debugging in to Console
+* Restore row editing when no unique/primary key exists
+* Allow exporting one file per table and one file per database
+* Improvements to using multiple servers with the auth_type cookie
+* Support virtual columns (MySQL 5.7.5+)
+* Add or improve support for several MariaDB features including process list and virtual/persistent columns
+* Improved handling of cached data when upgrading phpMyAdmin
+* Add SHA256 security password support
+
+There are many more; please refer to the ChangeLog for full details.
+
+As always, downloads are available at http://www.phpmyadmin.net
+
+The phpMyAdmin Team
+
