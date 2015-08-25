@@ -1,6 +1,6 @@
 Welcome to phpMyAdmin 4.5.0, which includes many improvements thanks to our Google
 Summer of Code students and other contributors. With this release, the minimum required PHP version
-is now 5.5 (older versions have reached End Of Life and are no longer supported by PHP).
+is now 5.5 (older versions have reached End Of Life and are no longer supported by the PHP development team).
 
 A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
 changelog.php included with this release.
@@ -18,7 +18,7 @@ A few highlights:
 * Use plain-English destinations for $cfg['NavigationTreeDefaultTabTable'], $cfg['DefaultTabServer'],
   $cfg['DefaultTabDatabase'], and $cfg['DefaultTabTable']. The old style values will still work, but
   this makes it easier for new users to easily understand the destination links.
-* Integrate SQL debugging in to Console
+* Integrate SQL debugging into Console
 * Restore row editing when no unique/primary key exists
 * Allow exporting one file per table and one file per database
 * Improvements to using multiple servers with the auth_type cookie
