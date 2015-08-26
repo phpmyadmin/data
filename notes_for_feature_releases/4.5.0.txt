@@ -1,6 +1,6 @@
 Welcome to phpMyAdmin 4.5.0, which includes many improvements thanks to our Google
 Summer of Code students and other contributors. With this release, the minimum required PHP version
-is now 5.5 (older versions have reached End Of Life and are no longer supported by the PHP development team).
+is now 5.5 (older versions have reached End of Life and are no longer supported by the PHP development team).
 
 A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
 changelog.php included with this release.
@@ -9,7 +9,7 @@ A few highlights:
 * Improvements to the Console feature
 * Include structure in PDF export
 * Validate data before import
-* Support Checksum table type
+* Support CHECKSUM TABLE operation
 * Improved operations regarding partitions
 * Alter privileges when renaming or copying a database or table
 * Several improvements related to speed and responsiveness
