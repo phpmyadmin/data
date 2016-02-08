@@ -1,0 +1,28 @@
+Welcome to phpMyAdmin 4.6.0, a regular maintenance release including over 35 improvements.
+Please note that this release ends support for old versions of Microsoft Internet Explorer,
+which is no longer supported by Microsoft. There is a new configuration directive, $cfg['Servers'][$i]['ssl_verify']
+which is useful in some cases with self-signed certificates. The ForceSSL and PmaAbsoluteUri configuration
+directives have been removed.
+
+A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
+changelog.php included with this release.
+
+A few highlights:
+* Allow setting routine-wise privileges
+* UI for defining partitioning in create table window
+* Support JSON data type
+* Editing partitions in table Structure
+* Copy results to clipboard
+* Reactivate cut&paste possibility in print view
+* Display binary strings as text if they are valid UTF-8
+* Copy multiple tables to database
+* Show MySQL error messages in user language
+
+There are many more improvements; please refer to the ChangeLog for full details.
+
+As always, downloads are available at http://www.phpmyadmin.net
+
+Ss always, thanks to our sponsors for helping to make this work possible!
+
+The phpMyAdmin Team
+
