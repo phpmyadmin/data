@@ -2,7 +2,8 @@ Welcome to phpMyAdmin 4.6.0, a regular maintenance release including over 35 imp
 Please note that this release ends support for old versions of Microsoft Internet Explorer,
 which is no longer supported by Microsoft. There is a new configuration directive, $cfg['Servers'][$i]['ssl_verify']
 which is useful in some cases with self-signed certificates. The ForceSSL and PmaAbsoluteUri configuration
-directives have been removed.
+directives have been removed (the functions of both of these should better be handled by the webserver
+than the application).
 
 A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
 changelog.php included with this release.
