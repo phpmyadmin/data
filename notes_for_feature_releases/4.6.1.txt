@@ -1,0 +1,25 @@
+Welcome to phpMyAdmin 4.6.1, a regular maintenance release consisting mostly of bug fixes.
+
+A few of the many bugs fixed include:
+* Problems with SQL syntax warnings from the linter/parser
+* Fixing an error about "PMA_Util" not found
+* Better handling of JSON columns
+* Fixed quoting with the SQL parser, which in particular adversely affected SQL imports and exports
+
+A complete list of changes is available in the ChangeLog file.
+
+Downloads are available at https://www.phpmyadmin.net/downloads
+
+The phpMyAdmin team
+
+Notable changes in version 4.6.0:
+
+* Allow setting routine-wise privileges
+* UI for defining partitioning in create table window
+* Support JSON data type
+* Editing partitions in table Structure
+* Copy results to clipboard
+* Reactivate cut&paste possibility in print view
+* Display binary strings as text if they are valid UTF-8
+* Copy multiple tables to database
+* Show MySQL error messages in user language
