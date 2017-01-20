@@ -1,0 +1,33 @@
+Welcome to phpMyAdmin 4.7.0, a regular maintenence release.
+
+A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
+changelog.php included with this release.
+
+A few highlights:
+* Log failed authentication attempts to syslog (useful for parsing by fail2ban, for example)
+* Add filtering for the database list
+* Add table filtering to the database 'Structure' tab
+* Add support for exporting user settings as a config.inc.php snippet
+* Add option to delete settings from browser storage
+* Changes to the JSON import and export format to better follow the JSON specification, however this breaks
+  compatibilty with older versions. See https://docs.phpmyadmin.net/en/latest/import_export.html#json
+* Support for IPv6 proxies
+* Allow more connection parameters for the controluser connection
+* Rename 'Relations' to 'Relationships' in many places as it's a more correct term
+* More documentation for export configuration options
+* Remove support for Swekey authentication
+* Remove support for old, unsupported versions of Microsoft Internet Explorer
+* Removed $cfg['ThemePath']
+
+Starting with this version, phpMyAdmin uses Composer to manage PHP library dependencies while under development.
+Users downloading the official source distribution will not notice a difference, however users of the git repository
+should refer to https://docs.phpmyadmin.net/en/latest/setup.html#installing-from-git for details.
+
+There are many more improvements; please refer to the ChangeLog for full details.
+
+As always, downloads are available at https://www.phpmyadmin.net
+
+Thanks to our sponsors for helping to make this work possible!
+
+The phpMyAdmin Team
+
