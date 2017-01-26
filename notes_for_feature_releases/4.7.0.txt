@@ -23,6 +23,14 @@ Starting with this version, phpMyAdmin uses Composer to manage PHP library depen
 Users downloading the official source distribution will not notice a difference, however users of the git repository
 should refer to https://docs.phpmyadmin.net/en/latest/setup.html#installing-from-git for details.
 
+Also beginning with this version, we've made some changes to the files available for download. There are now three
+different packages available: `all-langauges` and `english` are the same downloads we've offered for some time, the former
+featuring all languages for which we have a reasonable amount of translations and the latter being a smaller English-only
+download. We have added a `source` download, which includes the unit test suite, Gettext po files, documentation source, and
+JavaScript source files; these are omited from the other packages as most users have no need for them. We have also reduced
+the number of compression formats available due to low utilization; for each package we have .tar.gz, .tar.xz, and .zip formats
+available.
+
 There are many more improvements; please refer to the ChangeLog for full details.
 
 As always, downloads are available at https://www.phpmyadmin.net
