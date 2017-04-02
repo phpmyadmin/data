@@ -1,16 +1,29 @@
-Welcome to phpMyAdmin 4.7.0, a regular maintenence release.
+Welcome to phpMyAdmin 4.7.0, a regular maintenance release containing new features, bug fixes, and a security fix.
 
 A complete list of new features and bugs that have been fixed is available in the ChangeLog file or
 changelog.php included with this release.
 
-A few highlights:
+Notable changes since 4.6.6:
+* Fix an issue where $cfg['Servers'][$i]['AllowNoPassword'] is ignored (PMASA-2017-8)
+* Fix JavaScript errors when using Designer
+* Show all databases in dropdown selector, including the current one
+* Better defaults when creating a multi-field foreign key
+* Improved support for TokuDB
+* Improved handling of LoginCookieValidity, this should improve certain cases where users were getting logged out prematurely
+* Fix an error that could occur when copying a database (related to pmadb/Configuration Storage metadata)
+* Fixed OpenDocument exports
+* Fixed alignment of NULL values
+* Removed error message about client and server version mismatch
+* Compatibility fixes when running under HHVM 3.18
+* Fix the version check when curl is incorrectly configured
+* Change the default export setting for Excel files; now the default is to include column names in the first row. This is always configurable with $cfg['Export']['excel_columns']
 * Log failed authentication attempts to syslog (useful for parsing by fail2ban, for example)
 * Add filtering for the database list
 * Add table filtering to the database 'Structure' tab
 * Add support for exporting user settings as a config.inc.php snippet
 * Add option to delete settings from browser storage
 * Changes to the JSON import and export format to better follow the JSON specification, however this breaks
-  compatibilty with older versions. See https://docs.phpmyadmin.net/en/latest/import_export.html#json
+  compatibility with older versions. See https://docs.phpmyadmin.net/en/latest/import_export.html#json
 * Support for IPv6 proxies
 * Allow more connection parameters for the controluser connection
 * Rename 'Relations' to 'Relationships' in many places as it's a more correct term
@@ -27,7 +40,7 @@ Also beginning with this version, we've made some changes to the files available
 different packages available: `all-langauges` and `english` are the same downloads we've offered for some time, the former
 featuring all languages for which we have a reasonable amount of translations and the latter being a smaller English-only
 download. We have added a `source` download, which includes the unit test suite, Gettext po files, documentation source, and
-JavaScript source files; these are omited from the other packages as most users have no need for them. We have also reduced
+JavaScript source files; these are omitted from the other packages as most users have no need for them. We have also reduced
 the number of compression formats available due to low utilization; for each package we have .tar.gz, .tar.xz, and .zip formats
 available.
 
@@ -38,4 +51,3 @@ As always, downloads are available at https://www.phpmyadmin.net
 Thanks to our sponsors for helping to make this work possible!
 
 The phpMyAdmin Team
-
